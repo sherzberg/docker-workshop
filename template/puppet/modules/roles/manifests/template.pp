@@ -4,4 +4,8 @@ class roles::template {
     ensure => present,
   }
 
+  class {'docker':
+    version => '0.11.1',
+  }
+
 }
