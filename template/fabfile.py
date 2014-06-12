@@ -2,10 +2,13 @@ import os
 
 from fabric.api import task, env, execute, put, run, sudo, settings, hide, local
 from loom import puppet
-from loom.tasks import *
+from loom.tasks import uptime, ssh
 
 
+
+env.key_filename = [os.path.expanduser("~/.ssh/iowaruby.pem")]
 env.loom_librarian_version = None
+env.user = 'root'
 env.roledefs = {
     'template': ['root@{ip}'.format(ip=os.environ['TEMPLATE_IP'])],
 }
