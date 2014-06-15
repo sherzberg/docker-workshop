@@ -1,6 +1,6 @@
 name: Docker Workshop
 pygments: true
-url: ""
+url: "http://sherzberg.github.io/docker-workshop"
 baseurl: ""
 
 markdown: kramdown
