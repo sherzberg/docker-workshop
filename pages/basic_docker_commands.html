@@ -4,8 +4,25 @@ title: Basic Docker Commands
 order: 2
 ---
 
-Docker run
-Docker ps
-Docker inspect
-Docker kill
-Docker logs
+{% highlight bash %}
+
+docker run -i -t workshop env
+
+docker run -i -t workshop echo "hi workshop peeps"
+
+docker run -d -t workshop sleep 1000
+
+docker ps
+
+docker ps -q
+
+ID=$(docker ps -q)
+
+docker inspect $ID
+
+docker kill $ID
+
+docker kill $(docker ps -q)
+{% endhighlight %}
+
+#TODO: logs, attach, move to bash script
