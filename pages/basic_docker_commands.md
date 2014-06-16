@@ -25,4 +25,9 @@ docker kill $ID
 docker kill $(docker ps -q)
 {% endhighlight %}
 
-#TODO: logs, attach, move to bash script
+Exercises
+---------
+
+ * Using `fig log` check the stdout of a container
+ * Try our `fig attach` on a detached running container
+ * With an interactive container, pipe the output to a file or another bash command
