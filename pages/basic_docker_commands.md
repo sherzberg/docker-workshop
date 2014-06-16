@@ -6,11 +6,11 @@ order: 2
 
 {% highlight bash %}
 
-docker run -i -t workshop env
+docker run -i -t stackbrew/ubuntu:14.04 env
 
-docker run -i -t workshop echo "hi workshop peeps"
+docker run -i -t stackbrew/ubuntu:14.04 echo "hi workshop peeps"
 
-docker run -d -t workshop sleep 1000
+docker run -d -t stackbrew/ubuntu:14.04 sleep 1000
 
 docker ps
 
