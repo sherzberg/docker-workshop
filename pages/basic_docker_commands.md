@@ -29,5 +29,5 @@ Exercises
 ---------
 
  * Using `fig log` check the stdout of a container
- * Try our `fig attach` on a detached running container
+ * Try out `fig attach` on a detached running container
  * With an interactive container, pipe the output to a file or another bash command
