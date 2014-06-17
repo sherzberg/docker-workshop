@@ -40,7 +40,7 @@ $ cat index.html
 Change your `Dockerfile` to this:
 
 {% highlight text %}
-  {% include linking_and_volumes/1/Dockerfile %}
+{% include linking_and_volumes/1/Dockerfile %}
 {% endhighlight %}
 
 ```bash

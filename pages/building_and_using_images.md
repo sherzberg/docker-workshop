@@ -8,7 +8,7 @@ First, create a file called Dockerfile in your current folder with
 this as the contents:
 
 {% highlight text %}
-  {% include building_and_using_images/1/Dockerfile %}
+{% include building_and_using_images/1/Dockerfile %}
 {% endhighlight %}
 
 This is a really basic `Dockerfile` that can be used to create a Docker image.
@@ -31,7 +31,7 @@ Now, run it a second time. Faster huh? Docker will cache Dockerfile steps!
 Lets add a few more things:
 
 {% highlight text %}
-  {% include building_and_using_images/2/Dockerfile %}
+{% include building_and_using_images/2/Dockerfile %}
 {% endhighlight %}
 
 Now lets rebuilding and try running this image with some commands:
@@ -51,13 +51,13 @@ Next lets try adding local files. Create a file called _myfile.txt_ in the
 current directory with this as the contents:
 
 {% highlight text %}
-  {% include building_and_using_images/3/myfile.txt %}
+{% include building_and_using_images/3/myfile.txt %}
 {% endhighlight %}
 
 Now add the last line to your `Dockerfile`:
 
 {% highlight text %}
-  {% include building_and_using_images/3/Dockerfile %}
+{% include building_and_using_images/3/Dockerfile %}
 {% endhighlight %}
 
 Now, lets see the container have access to it:

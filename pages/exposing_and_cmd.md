@@ -13,7 +13,7 @@ Exposing Ports
 Replace your `Dockerfile` with this one:
 
 {% highlight text %}
-  {% include exposing_and_cmd/1/Dockerfile %}
+{% include exposing_and_cmd/1/Dockerfile %}
 {% endhighlight %}
 
 Now build it:
@@ -47,7 +47,7 @@ to type your command every time???
 Replace your `Dockerfile` with this one:
 
 {% highlight text %}
-  {% include exposing_and_cmd/2/Dockerfile %}
+{% include exposing_and_cmd/2/Dockerfile %}
 {% endhighlight %}
 
 ```bash

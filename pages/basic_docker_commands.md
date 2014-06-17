@@ -5,7 +5,6 @@ order: 2
 ---
 
 {% highlight bash %}
-
 docker run -i -t stackbrew/ubuntu:14.04 env
 
 docker run -i -t stackbrew/ubuntu:14.04 echo "hi workshop peeps"
