@@ -7,7 +7,7 @@ order: 3
 First, create a file called Dockerfile in your current folder with
 this as the contents:
 
-{% highlight js %}
+{% highlight text %}
   {% include building_and_using_images/1/Dockerfile %}
 {% endhighlight %}
 
@@ -30,6 +30,45 @@ Now, run it a second time. Faster huh? Docker will cache Dockerfile steps!
 
 Lets add a few more things:
 
-{% highlight js %}
+{% highlight text %}
   {% include building_and_using_images/2/Dockerfile %}
 {% endhighlight %}
+
+Now lets rebuilding and try running this image with some commands:
+
+```bash
+$ docker build -t workshop .
+...
+$ docker run -i -t workshop /urs/games/cowsay hello there!
+...
+```
+
+As we keep adding to the `Dockerfile` you can see the steps are being
+cached. Caching occurs when step actions do not change. Pay close attention
+to ording of steps.
+
+Next lets try adding local files. Create a file called _myfile.txt_ in the
+current directory with this as the contents:
+
+{% highlight text %}
+  {% include building_and_using_images/3/myfile.txt %}
+{% endhighlight %}
+
+Now add the last line to your `Dockerfile`:
+
+{% highlight text %}
+  {% include building_and_using_images/3/Dockerfile %}
+{% endhighlight %}
+
+Now, lets see the container have access to it:
+
+```bash
+$ docker run -i -t workshop cat /app/myfile.txt
+...
+```
+
+Exercises
+---------
+
+ * Using our `workshop` tag, build a new `Dockerfile` that uses this tag as the base
+ * How can you add a whole folder to the image?
