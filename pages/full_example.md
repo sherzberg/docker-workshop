@@ -68,6 +68,8 @@ mysql> show databases;
 ...
 ```
 
+The exercises below will have you link the two containers up.
+
 Exercises
 ---------
 
