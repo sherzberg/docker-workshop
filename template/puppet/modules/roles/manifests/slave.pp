@@ -1,4 +1,4 @@
-class roles::template {
+class roles::slave {
 
   include workshop::run
 

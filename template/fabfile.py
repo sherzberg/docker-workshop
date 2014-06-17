@@ -10,7 +10,9 @@ env.key_filename = [os.path.expanduser("~/.ssh/iowaruby.pem")]
 env.loom_librarian_version = None
 env.user = 'root'
 env.roledefs = {
-    'template': ['root@{ip}'.format(ip=os.environ['TEMPLATE_IP'])],
+    'template': [os.environ['TEMPLATE_IP']],
+    'test': [os.environ['TEST_IP']],
+    'slave': os.environ['ALL_IPS'].split(),
 }
 env.puppet_module_dir = 'puppet/modules'
 
