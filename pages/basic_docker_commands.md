@@ -13,6 +13,8 @@ docker run -d -t stackbrew/ubuntu:14.04 sleep 1000
 
 docker ps
 
+docker top
+
 docker ps -q
 
 ID=$(docker ps -q)
@@ -22,7 +24,18 @@ docker inspect $ID
 docker kill $ID
 
 docker kill $(docker ps -q)
+
+docker run -i -e MYVAR=hi -t stackbrew/ubuntu:14.04 env
 {% endhighlight %}
+
+Host info
+---------
+
+```bash
+$ docker info
+...
+$ docker version
+```
 
 Exercises
 ---------
