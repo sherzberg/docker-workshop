@@ -25,9 +25,12 @@ Run `/bin/bash` in another container where we link containers.
 $ docker run -i --link exposed:exposed -t workshop /bin/bash
 root@1234:/# env | grep sort
 ...
+root@1234:/# cat /etc/hosts
+...
 ```
 
-With that output you can see how `Docker` links containers, `ENV` variables.
+With that output you can see how `Docker` links containers, `ENV` variables,
+and hosts entries!
 
 While still in the container:
 
