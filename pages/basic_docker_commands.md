@@ -28,6 +28,6 @@ docker kill $(docker ps -q)
 Exercises
 ---------
 
- * Using `fig log` check the stdout of a container
- * Try out `fig attach` on a detached running container
+ * Using `docker logs` check the stdout of a container
+ * Try out `docker attach` on a detached running container
  * With an interactive container, pipe the output to a file or another bash command
