@@ -39,7 +39,7 @@ Now lets rebuilding and try running this image with some commands:
 ```bash
 $ docker build -t workshop .
 ...
-$ docker run -i -t workshop /urs/games/cowsay hello there!
+$ docker run -i -t workshop /usr/games/cowsay hello there!
 ...
 ```
 
