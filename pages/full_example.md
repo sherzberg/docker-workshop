@@ -31,7 +31,7 @@ $ docker build -t workshop/full .
 $ docker run -i -p 3000:3000 -v $(pwd):/app -t workshop/full passenger start
 ```
 
-If you don't get any errors, navigate to http://your-ip:8000
+If you don't get any errors, navigate to http://your-ip:3000
 
 Sinatra setup
 -------------
