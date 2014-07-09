@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Full Example
+title: Full Example (ruby)
 order: 6
 ---
 
@@ -12,7 +12,7 @@ Passenger/rack/ruby setup
 Lets put this `Dockerfile` into a new folder:
 
 {% highlight text %}
-{% include full_example/Dockerfile %}
+{% include full_example_ruby/Dockerfile %}
 {% endhighlight %}
 
 This base image, `litaio/ruby` already has build out Ruby 2.1.2 for us. You can check out that images Dockerfile [here](https://github.com/litaio/dockerfiles/blob/master/ruby/Dockerfile).
@@ -20,7 +20,7 @@ This base image, `litaio/ruby` already has build out Ruby 2.1.2 for us. You can 
 You also need to create a file called `config.ru` in that folder:
 
 {% highlight ruby %}
-{% include full_example/ruby/config.ru %}
+{% include full_example_ruby/ruby/config.ru %}
 {% endhighlight %}
 
 And lets see if it works:
@@ -39,13 +39,13 @@ Sinatra setup
 Sinatra is a nice little webframework with minial configuration. Lets replace our `config.ru` with:
 
 {% highlight ruby %}
-{% include full_example/sinatra/config.ru %}
+{% include full_example_ruby/sinatra/config.ru %}
 {% endhighlight %}
 
 We also need our Sinatra code in `app.rb`:
 
 {% highlight ruby %}
-{% include full_example/sinatra/app.rb %}
+{% include full_example_ruby/sinatra/app.rb %}
 {% endhighlight %}
 
 ```bash
