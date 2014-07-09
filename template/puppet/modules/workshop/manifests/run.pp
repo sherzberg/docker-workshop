@@ -24,6 +24,12 @@ class workshop::run {
   docker::image {'orchardup/mysql':
   }
 
+  docker::image {'sherzberg/python-all-dev':
+  }
+
+  docker::image {'redis':
+  }
+
   include wget
 
   wget::fetch {'https://github.com/orchardup/fig/releases/download/0.4.1/linux':
