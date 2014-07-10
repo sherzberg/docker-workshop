@@ -13,20 +13,20 @@ class workshop::run {
   class {'docker':
     version => '1.0.0',
   }
-
+  ->
   docker::image {'stackbrew/ubuntu':
     image_tag => '14.04',
   }
-
+  ->
   docker::image {'litaio/ruby':
   }
-
+  ->
   docker::image {'orchardup/mysql':
   }
-
+  ->
   docker::image {'sherzberg/python-all-dev':
   }
-
+  ->
   docker::image {'redis':
   }
 

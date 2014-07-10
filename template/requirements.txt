@@ -1,1 +1,1 @@
-loom
+https://github.com/bfirsh/loom/archive/master.zip
